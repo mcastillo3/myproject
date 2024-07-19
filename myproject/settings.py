@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cipdcv%z0kwinuu&o7o3d5-tm+-_0joohal-8a34nj)*ogdxst'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['3.145.150.247', 'localhost', '127.0.0.1']
 
@@ -54,11 +54,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
-]
-
+CORS_ALLOWED_ORIGINS = True
 
 ROOT_URLCONF = 'myproject.urls'
 
